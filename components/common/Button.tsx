@@ -12,9 +12,9 @@ export default function Button({
     secondary=false,
     local=false
 }: ButtonProps) {
-    return url ? <a href={ url } target={ local ? '_parent' : '_blank' } className={ `${ className }` }>
+    return url ? <a href={ url } target={ local ? '_parent' : '_blank' } className={ `${ className } z-10` }>
         <BaseButton icon={ icon } text={ text } secondary={ secondary }/>
-    </a> : <button onClick={ onClick } className={ `${ className }` }>
+    </a> : <button onClick={ onClick } className={ `${ className } z-10` }>
         <BaseButton icon={ icon } text={ text } secondary={ secondary }/>
     </button>;
 }
