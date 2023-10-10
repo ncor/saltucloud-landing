@@ -15,9 +15,9 @@ export default function Offer() {
                 </div>
             </div>
             <div className="relative self-center">
-                <Highlight color="white" className="w-[250px] h-[250px] top-[60%] left-[40%] -translate-x-1/2 -translate-y-1/2"/>
-                <Highlight color="peach" className="w-[175px] h-[175px] -top-[100px] left-0 -translate-x-1/2 -translate-y-1/2 opacity-[45%] blur-[85px]"/>
-                <Highlight color="magenta" className="top-0 left-full -translate-x-1/2 -translate-y-1/2 opacity-[45%]"/>
+                <Highlight color="white" className="top-[60%] left-[40%] -translate-x-1/2 -translate-y-1/2"/>
+                <Highlight color="peach" className="w-[1000px] h-[1000px] -top-[100px] left-0 -translate-x-1/2 -translate-y-1/2 opacity-[50%]"/>
+                <Highlight color="magenta" className="w-[1000px] h-[1000px] top-0 left-full -translate-x-1/2 -translate-y-1/2 opacity-[45%]"/>
                 <Button text="Арендовать" icon={ <ActionIcon/> } url="/#contacts" local className="animate-pulse"/>
             </div>
         </div>
