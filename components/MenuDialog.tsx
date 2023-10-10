@@ -14,8 +14,8 @@ export default function MenuDialog() {
             y: 0
         }}
         transition={{
-            type: 'spring',
-            duration: 0.4
+            type: 'twin',
+            duration: 0.2
         }}
         className="w-full h-full flex justify-center items-end"
     >
