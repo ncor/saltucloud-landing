@@ -19,10 +19,10 @@ export default function MenuDialog() {
         }}
         className="w-full h-full flex justify-center items-end"
     >
-        <div className="flex flex-col bg-black rounded-t-lg min-w-[396px]">
+        <div className="flex flex-col bg-black mb-6 rounded-lg min-w-[396px]">
             <MenuDialogLink text="Контакты" url="/#contacts" local/>
             <MenuDialogLink text="Поддержка" url="https://t.me/saltu_sup_bot"/>
-            <MenuDialogLink text="Правила" url="/policy" local/>
+            <MenuDialogLink text="Правила" url="/policy" local last/>
         </div>
     </motion.div>
 }

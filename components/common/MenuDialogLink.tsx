@@ -16,7 +16,7 @@ export default function MenuDialogLink({
     const { setVisible } = useContext(OverlayContext);
 
     return <a href={ url } target={ local ? '_parent' : '_blank' } onClick={ () => setVisible(false) } className={
-        `p-6 group flex items-center justify-between border-b-[1px]${ !last ? ' border-neutral-800' : '' }`
+        `p-6 group flex items-center justify-between ${ !last ? ' border-b-[1px] border-neutral-800' : '' }`
     }>
         <div className="text-neutral-400 group-hover:text-white transition-all duration-400">
             { text }
