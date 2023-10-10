@@ -20,7 +20,7 @@ export type HighlightProps = {
 
 export default function Highlight({ color, className }: HighlightProps) {
     return <div className={
-        `absolute w-[775px] h-[775px] ${className} opacity-[0.2] -z-10`
+        `${className} absolute w-[775px] h-[775px] opacity-[0.2] -z-10`
     }>
         <Image src={ highlightImages[color] } alt="" fill/>
     </div>
