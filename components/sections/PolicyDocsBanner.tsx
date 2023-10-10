@@ -1,4 +1,4 @@
-import Lightbulb from "../common/Lightbulb";
+import Lightbulb from "../common/Highlight";
 
 export default function PolicyDocsBanner() {
     return <div className="w-full px-6 flex justify-center">

@@ -1,5 +1,5 @@
 import Button from "../common/Button";
-import Lightbulb from "../common/Lightbulb";
+import Highlight from "../common/Highlight";
 import ActionIcon from "../icons/ActionIcon";
 
 
@@ -15,9 +15,9 @@ export default function Offer() {
                 </div>
             </div>
             <div className="relative self-center">
-                <Lightbulb color="white" className="w-[250px] h-[250px] top-[60%] left-[40%] -translate-x-1/2 -translate-y-1/2"/>
-                <Lightbulb color="peach" className="w-[175px] h-[175px] -top-[100px] left-0 -translate-x-1/2 -translate-y-1/2 opacity-40 blur-[85px]"/>
-                <Lightbulb color="magenta" className="top-0 left-[125%] -translate-x-1/2 -translate-y-1/2 opacity-30"/>
+                <Highlight color="white" className="w-[250px] h-[250px] top-[60%] left-[40%] -translate-x-1/2 -translate-y-1/2"/>
+                <Highlight color="peach" className="w-[175px] h-[175px] -top-[100px] left-0 -translate-x-1/2 -translate-y-1/2 opacity-[0.3] blur-[85px]"/>
+                <Highlight color="magenta" className="top-0 left-[125%] -translate-x-1/2 -translate-y-1/2 opacity-[0.4]"/>
                 <Button text="Арендовать" icon={ <ActionIcon/> } url="/#contacts" local className="animate-pulse"/>
             </div>
         </div>
