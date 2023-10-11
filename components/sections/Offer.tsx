@@ -19,7 +19,7 @@ export default function Offer() {
                 </div>
             </div>
             <div className="relative self-center">
-                <Highlight color="white" size={ 775 } className="top-[60%] left-[40%] -translate-x-1/2 -translate-y-1/2"/>
+                <Highlight color="white" size={ 500 } className="top-[60%] left-[40%] -translate-x-1/2 -translate-y-1/2"/>
                 <Highlight color="peach" size={ 775 } className="-top-[100px] left-0 -translate-x-1/2 -translate-y-1/2 opacity-[50%]"/>
                 <Highlight color="magenta" size={ 775 } className="top-0 left-full -translate-x-1/2 -translate-y-1/2 opacity-[45%]"/>
                 <Button

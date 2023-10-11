@@ -21,7 +21,7 @@ export type HighlightProps = {
 
 export default function Highlight({ color, className, size=1000 }: HighlightProps) {
     return <div className={
-        `absolute opacity-[0.2] -z-10 ${className} pointer-events-none`
+        `absolute opacity-[0.2] -z-10 ${className} pointer-events-none mix-blend-plus-lighter`
     } style={{
         width: size + 'px',
         height: size + 'px'
