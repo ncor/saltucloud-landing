@@ -26,7 +26,7 @@ export default function FaqItem({
         }
     }, [ ref, expanded, contentHeight ])
 
-    
+
     return <div className={
         `flex flex-col${ !last ? ' border-b-[1px] border-neutral-800' : '' }`
     }>
@@ -44,7 +44,10 @@ export default function FaqItem({
                 open: {
                     opacity: 1,
                     height: contentHeight,
-                    display: 'block'
+                    display: 'block',
+                    transition: {
+                        duration: 0.2
+                    }
                 },
                 closed: {
                     opacity: 0,
@@ -52,15 +55,12 @@ export default function FaqItem({
                     padding: 0,
                     display: 'none',
                     transition: {
+                        duration: 0.3,
                         display: {
-                            delay: 0.2
+                            delay: 0.3
                         }
                     }
                 }
-            }}
-            transition={{
-                type: 'twin',
-                duration: 0.2
             }}
             animate={ expanded ? 'open' : 'closed' }
             className="pb-4 text-neutral-400"

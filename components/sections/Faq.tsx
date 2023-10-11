@@ -3,7 +3,7 @@ import ItemsGroup from "../common/ItemsGroup";
 
 
 export default function Faq() {
-    return <div className="w-full px-6 flex justify-center border-neutral-800 border-t-[1px] backdrop-blur-[160px]">
+    return <div className="w-full px-6 flex justify-center border-neutral-800 border-t-[1px] bg-[rgba(0,0,0,.4)] backdrop-blur-[16px]">
         <div className="w-full max-w-6xl pt-[84px] flex flex-col md:flex-row gap-16">
             <div className="flex flex-col gap-4 md:w-1/3">
                 <div className="text-lg leading-[22px] text-peach font-medium">

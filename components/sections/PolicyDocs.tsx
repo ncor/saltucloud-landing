@@ -1,5 +1,5 @@
 export default function PolicyDocs() {
-    return <div className="w-full px-6 flex justify-center border-neutral-800 bg-[rgba(255,255,255,0.01)] border-t-[1px] backdrop-blur-[160px]">
+    return <div className="w-full px-6 flex justify-center border-neutral-800 border-t-[1px]  bg-[rgba(0,0,0,0.4)] backdrop-blur-[16px]">
         <div className="w-full max-w-6xl py-[84px] flex flex-col gap-16">
             <div className="flex flex-col gap-4">
                 <div className="text-4xl leading-[48px] font-bold">

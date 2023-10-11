@@ -4,7 +4,7 @@ import ItemsGroup from "../common/ItemsGroup";
 
 
 export default function Contacts() {
-    return <div id="contacts" className="w-full px-6 flex justify-center backdrop-blur-[160px]">
+    return <div id="contacts" className="w-full px-6 flex justify-center bg-black">
         <div className="w-full max-w-6xl pt-[84px] flex flex-col md:flex-row gap-16">
             <div className="flex flex-col gap-4 md:w-1/3">
                 <div className="text-lg leading-[22px] text-magenta font-medium">
