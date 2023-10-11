@@ -1,6 +1,5 @@
 import { ReactNode } from "react"
 import Providers from "./Providers"
-import Overlay from "./Overlay"
 import Header from "./sections/Header"
 import Footer from "./sections/Footer"
 import { motion } from "framer-motion"
@@ -13,7 +12,6 @@ export interface PageProps {
 export default function Page({ children }: PageProps) {
     return <Providers>
         <main className="page">
-            <Overlay/>
             <div className="wrap">
                 <Header/>
                 <motion.div

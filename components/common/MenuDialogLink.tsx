@@ -1,6 +1,6 @@
 import { useContext } from "react"
 import RedirectIcon from "../icons/RedirectIcon"
-import { OverlayContext } from "@/contexts/overlayContext"
+import { MobileMenuContext } from "@/contexts/mobileMenuContext"
 
 
 export interface MenuDialogLinkProps {
@@ -13,7 +13,7 @@ export interface MenuDialogLinkProps {
 export default function MenuDialogLink({
     text, url, last=false, local=false
 }: MenuDialogLinkProps) {
-    const { setVisible } = useContext(OverlayContext);
+    const { setVisible } = useContext(MobileMenuContext);
 
     return <a href={ url } target={ local ? '_parent' : '_blank' } onClick={ () => setVisible(false) } className={
         `p-6 group flex items-center justify-between ${ !last ? ' border-b-[1px] border-neutral-800' : '' }`

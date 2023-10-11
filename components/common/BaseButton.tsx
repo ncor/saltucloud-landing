@@ -8,7 +8,7 @@ export default function BaseButton({
     icon, text, secondary=false
 }: BaseButtonProps) {
     const buttonStyling = secondary ?
-        'backdrop-blur-3xl text-white border-neutral-800 border-[1px]'
+        'bg-black text-white border-neutral-800 border-[1px]'
     :
         'bg-white text-black font-medium'
 

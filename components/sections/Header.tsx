@@ -1,15 +1,17 @@
-import { ReactNode, useContext } from "react";
+import { useContext } from "react";
 import LogoIcon from "../icons/LogoIcon";
 import MenuIcon from "../icons/MenuIcon";
-import { OverlayContext } from "@/contexts/overlayContext";
-import MenuDialog from "../MenuDialog";
+import { MobileMenuContext } from "@/contexts/mobileMenuContext";
 import Link from "../common/Link";
+import CloseIcon from "../icons/CloseIcon";
+import MobileMenu from "../MobileMenu";
 
 
 export default function Header() {
-    const { showDialog } = useContext(OverlayContext);
+    const { visible, setVisible } = useContext(MobileMenuContext);
 
-    return <div className="w-full px-6 flex justify-center border-neutral-900 border-b-[1px] backdrop-blur-[160px]">
+    return <div className="relative w-full px-6 flex justify-center bg-black border-neutral-900 border-b-[1px]">
+        <MobileMenu/>
         <div className="w-full max-w-6xl py-6 flex items-center justify-between">
             <a href="/" className="flex items-center gap-2">
                 <LogoIcon/>
@@ -17,8 +19,8 @@ export default function Header() {
                     cloud
                 </div>
             </a>
-            <button className="md:hidden" onClick={ () => showDialog(<MenuDialog key={ Math.random() }/>) }>
-                <MenuIcon/>
+            <button className="md:hidden" onClick={ () => setVisible(!visible) }>
+                { visible ? <CloseIcon/> : <MenuIcon/> }
             </button>
             <div className="hidden md:flex gap-6 text-neutral-400">
                 <Link href="/#contacts">

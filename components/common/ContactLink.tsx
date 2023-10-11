@@ -16,7 +16,8 @@ export default function ContactLink(
     const disabledStyles = ' pointer-events-none cursor-default'
 
     return <a href={ url } target="_blank" className={
-        `w-full group relative flex justify-between p-6 bg-white bg-opacity-[0.01] rounded-lg hover:shadow-[0px_0px_16px_rgba(255,255,255,0.25)] hover:border-white transition-all duration-400 ${ disabled ? disabledStyles : 'border-[1px] border-neutral-900 ' }`
+        `w-full group relative flex justify-between p-6 bg-[#030303] rounded-lg hover:shadow-[0px_0px_16px_rgba(255,255,255,0.25)]
+        hover:border-white transition-all duration-400 ${ disabled ? disabledStyles : 'border-[1px] border-neutral-900 ' }`
     }>
         { label && <Label text={ label } color="white"/> }
         <div className={ `flex flex-col${ disabled ? ' opacity-60' : '' }` }>
