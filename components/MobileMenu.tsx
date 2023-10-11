@@ -35,7 +35,8 @@ export default function MobileMenu() {
             duration: 0.2
         }}
         animate={ visible ? 'open' : 'closed' }
-        className="fixed top-[63px] w-full max-w-screen h-full max-h-screen bg-black z-50"
+        className="fixed top-[63px] w-full max-w-screen h-full max-h-screen bg-gradient-to-b
+                 from-black from-20% to-[rgba(0,0,0,0.5)] backdrop-blur-xl z-50"
     >
         <div className="w-full flex flex-col">
             <MenuDialogLink text="Контакты" url="/#contacts" local/>
