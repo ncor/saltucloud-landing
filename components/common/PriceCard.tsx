@@ -33,8 +33,11 @@ export default function PriceCard({
     color='white'
 }: PriceCardInterface) {
     return <div className={
-        `relative flex flex-col gap-6 p-6 md:p-9 border-[1px] border-${color} border-opacity-10 backdrop-blur-[64px] rounded-lg bg-${color} bg-opacity-[0.01]`
+        `relative flex flex-col gap-6 p-6 md:p-9 border-[1px] border-${color} bg-black border-opacity-10 backdrop-blur-[64px] rounded-lg`
     }>
+        <div className={ `absolute top-0 left-0 w-full h-full rounded-lg bg-${color} bg-opacity-[0.02]` }>
+
+        </div>
         { label && <Label text={ label } color={ color }/> }
         { label && <Highlight color={ color } className="top-0 left-1/2 -translate-x-1/2 -translate-y-1/2"/> }
         <div className={ `flex flex-col gap-2` }>

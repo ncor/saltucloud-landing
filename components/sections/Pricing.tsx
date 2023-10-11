@@ -3,8 +3,8 @@ import PriceCardFeature from "../common/PriceCardFeature";
 
 export default function Pricing() {
     return <div className="w-full px-6 flex justify-center">
-        <div className="w-full max-w-6xl pb-[84px] flex flex-col gap-16">
-            <div className="flex flex-col gap-4 text-center">
+        <div className="w-full max-w-6xl flex flex-col gap-16">
+            <div className="flex flex-col gap-4 text-center z-10">
                 <div className="text-4xl leading-[48px] font-bold">
                     Конфигурации
                 </div>

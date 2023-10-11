@@ -13,15 +13,19 @@ export const highlightImages = {
 export type HightlightColors = keyof (typeof highlightImages);
 
 export type HighlightProps = {
-    color: HightlightColors
+    color: HightlightColors,
+    size?: number,
 } & Pick<
     React.HTMLAttributes<HTMLDivElement>, 'className'
 >;
 
-export default function Highlight({ color, className }: HighlightProps) {
+export default function Highlight({ color, className, size=1000 }: HighlightProps) {
     return <div className={
-        `${className} absolute w-[775px] h-[775px] opacity-[0.2] -z-10`
-    }>
+        `absolute opacity-[0.2] -z-10 ${className} pointer-events-none`
+    } style={{
+        width: size + 'px',
+        height: size + 'px'
+    }}>
         <Image src={ highlightImages[color] } alt="" fill/>
     </div>
 }
