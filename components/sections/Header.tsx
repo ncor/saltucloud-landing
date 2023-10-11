@@ -10,7 +10,7 @@ import MobileMenu from "../MobileMenu";
 export default function Header() {
     const { visible, setVisible } = useContext(MobileMenuContext);
 
-    return <div className="relative w-full px-6 flex justify-center bg-black border-neutral-900 border-b-[1px]">
+    return <div className="relative w-full px-6 h-[64px] flex justify-center bg-black border-neutral-900 border-b-[1px]">
         <MobileMenu/>
         <div className="w-full max-w-6xl py-6 flex items-center justify-between">
             <a href="/" className="flex items-center gap-2">
@@ -22,7 +22,7 @@ export default function Header() {
             <button className="md:hidden" onClick={ () => setVisible(!visible) }>
                 { visible ? <CloseIcon/> : <MenuIcon/> }
             </button>
-            <div className="hidden md:flex gap-6 text-neutral-400">
+            <div className="hidden md:flex gap-2 text-neutral-400">
                 <Link href="/#contacts">
                     Контакты
                 </Link>
