@@ -1,89 +1,88 @@
+import { useTranslations } from "next-intl";
+
+
 export default function PolicyDocs() {
+    const t = useTranslations();
+
     return <div className="w-full px-6 flex justify-center border-neutral-800 border-t-[1px]  bg-[rgba(0,0,0,0.4)] backdrop-blur-[16px]">
         <div className="w-full max-w-6xl py-[84px] flex flex-col gap-16">
             <div className="flex flex-col gap-4">
                 <div className="text-4xl leading-[48px] font-bold">
-                    Зона ответственности Компании
+                    { t('policy.companyResponsibility.title') }
                 </div>
                 <ul className="text-neutral-400">
-                    <li>Проблемы с хост-машинами и связью - ответственность Компании.</li>
-                    <li>Проблемы с операционной системой, любым программным обеспечением, установленным на виртуальном сервере Клиентом - ответственность Клиента.</li>
+                    <li>{ t('policy.companyResponsibility.text.0') }</li>
+                    <li>{ t('policy.companyResponsibility.text.1') }</li>
                 </ul>
             </div>
             <div className="flex flex-col gap-4">
                 <div className="text-4xl leading-[48px] font-bold">
-                    Порядок оплаты
+                    { t('policy.paymentOrder.title') }
                 </div>
                 <ul className="text-neutral-400">
-                    <li>Услуги предоставляются на основании 100% оплаты в течение 2 (двух) рабочих дней после оплаты.</li>
-                    <li>Оплата физическими лицами производится только посредством электронных платежей.</li>
+                    <li>{ t('policy.paymentOrder.text.0') }</li>
+                    <li>{ t('policy.paymentOrder.text.1') }</li>
                 </ul>
             </div>
             <div className="flex flex-col gap-4">
                 <div className="text-4xl leading-[48px] font-bold">
-                Возврат средств
+                    { t('policy.refund.title') }
                 </div>
                 <ul className="text-neutral-400">
-                    <li>Возврат денежных средств возможен только в случае неработоспособности сервера по вине Компания и за фактически неиспользованные дни.</li>
-                    <li>Для возврата денежных средств. Компания сперва проводит анализ сервера на предмет установления причин неработоспособности сервера. Анализ осуществляется до 48 часов с момента сообщении от нас о анализе сервера.</li>
-                    <li>Не возвращается стоимость установки сторонних панелей управления, плата за дополнительные IP адреса и другие дополнительные услуги.</li>
-                    <li>В случае нарушения условий предоставления услуг Компания в праве отказать Клиенту в возврате средств.</li>
-                    <li>Мы не несём ответственность за работу какого либо софта/скрипта на наших серверах и не сможем сделать возврат средств.</li>
+                    <li>{ t('policy.refund.text.0') }</li>
+                    <li>{ t('policy.refund.text.1') }</li>
+                    <li>{ t('policy.refund.text.2') }</li>
+                    <li>{ t('policy.refund.text.3') }</li>
+                    <li>{ t('policy.refund.text.4') }</li>
                 </ul>
             </div>
             <div className="flex flex-col gap-4">
                 <div className="text-4xl leading-[48px] font-bold">
-                    Права и обязанности Клиента
+                    { t('policy.clientRightsAndObligations.title') }
                 </div>
                 <ul className="text-neutral-400">
-                    <li>Клиенту предоставляется доступ (если не оговорено иное) к серверу и Клиент несёт всю связанную с этим ответственность.</li>
-                    <li>В случае блокировки хостинга Клиента по жалобе и/или в следствии других причин 1 (один) или более 1 (одного) раза в месяц (скан сети, исходящие DoS/DDoS-атаки и др.) и непринятия Клиентом мер по поступившей жалобе, Компания в праве досрочно остановить предоставление услуги и заблокировать Клиента без возможности возврата средств.</li>
+                    <li>{ t('policy.clientRightsAndObligations.text.0') }</li>
+                    <li>{ t('policy.clientRightsAndObligations.text.1') }</li>
                 </ul>
             </div>
             <div className="flex flex-col gap-4">
                 <div className="text-4xl leading-[48px] font-bold">
-                    Используя наши виртуальные серверы VPS и выделенные серверы строго запрещено
+                    { t('policy.prohibitedActions.title') }
                 </div>
                 <ul className="text-neutral-400">
-                    <li>Любой умышленный email спам (как исходящий, так и входящий).</li>
-                    <li>Вирусы, эксплоиты, ботнеты а также редиректы на сайты, содержащие вирусы и эксплоиты.</li>
-                    <li>Детская порнография, инцест, порно с участием животных, а также сайты с моделями, выглядящими моложе 18 лет.</li>
-                    <li>Кражи и мошенничество.</li>
-                    <li>Постоянно нагружать процессор свыше 80%.</li>
-                    <li>В случае нагрузки канала на постоянной основе на высоких скоростях, мы вправе его лимитировать вам.</li>
-                    <li>Мошеннические сайты, а также редиректы на такие сайты.</li>
-                    <li>Кардинг и все, что с этим связано.</li>
-                    <li>Взлом правительственных (и не только) организаций и органов исполнительной власти.</li>
-                    <li>Любые активности, которые могут привести к блэклистингу IP (SpamHaus, StopForumSpam, SpamCop, Blocklist, антивирусные базы и любые другие черные списки).</li>
-                    <li>Проведение «тестовых» DDoS и прочих атак на свой сервер, которые могут создать проблемы другим клиентам. А также организация DDoS атак с арендованных серверов.</li>
+                    <li>{ t('policy.prohibitedActions.text.0') }</li>
+                    <li>{ t('policy.prohibitedActions.text.1') }</li>
+                    <li>{ t('policy.prohibitedActions.text.2') }</li>
+                    <li>{ t('policy.prohibitedActions.text.3') }</li>
+                    <li>{ t('policy.prohibitedActions.text.4') }</li>
+                    <li>{ t('policy.prohibitedActions.text.5') }</li>
+                    <li>{ t('policy.prohibitedActions.text.6') }</li>
+                    <li>{ t('policy.prohibitedActions.text.7') }</li>
+                    <li>{ t('policy.prohibitedActions.text.8') }</li>
+                    <li>{ t('policy.prohibitedActions.text.9') }</li>
+                    <li>{ t('policy.prohibitedActions.text.10') }</li>
+                    <li>{ t('policy.prohibitedActions.text.11') }</li>
+                    <li>{ t('policy.prohibitedActions.text.12') }</li>
+                    <li>{ t('policy.prohibitedActions.text.13') }</li>
+                    <li>{ t('policy.prohibitedActions.text.14') }</li>
+                    <li>{ t('policy.prohibitedActions.text.15') }</li>
+                    <li>{ t('policy.prohibitedActions.text.16') }</li>
+                    <li>{ t('policy.prohibitedActions.text.17') }</li>
+                    <li>{ t('policy.prohibitedActions.text.18') }</li>
+                    <li>{ t('policy.prohibitedActions.text.19') }</li>
+                    <li>{ t('policy.prohibitedActions.text.20') }</li>
+                    <li>{ t('policy.prohibitedActions.text.21') }</li>
                 </ul>
                 <div className="text-neutral-400">
-                    Мы оставляем за собой право блокировать таких клиентов незамедлительно (в том числе и аккаунты, зарегистрированные под другими именами! В случае запросов от правоохранительных органов им будет предоставлена вся необходимая информация!
+                    { t('policy.prohibitedActions.text.22') }
                 </div>
             </div>
             <div className="flex flex-col gap-4">
                 <div className="text-4xl leading-[48px] font-bold">
-                    Также запрещено
-                </div>
-                <ul className="text-neutral-400">
-                    <li>Онлайн аптеки с нелегальной фармацевтикой.</li>
-                    <li>Организация публичных VPN сервисов.</li>
-                    <li>Майнинг криптовалют.</li>
-                    <li>Replica sites/stores по продаже копий часов, сумок, одежды и тд.</li>
-                    <li>Сканирование портов и уязвимостей.</li>
-                    <li>Проксирование проектов через наши серверы/впс</li>
-                    <li>Нарушение законов страны, в которой располагается ваш сервер/VPS</li>
-                    <li>Добавлять и использовать не принадлежащие вам IP адреса. В случае выявления таких злоупотреблений мы немедленно блокируем сервер и выставляем штраф от 425 евро до 920 евро.</li>
-                    <li>Любые другие активности, которые могут причинить материальный либо репутационный ущерб нашей компании.</li>
-                    <li>Использование не лицензионного ПО Microsoft.</li>
-                </ul>
-            </div>
-            <div className="flex flex-col gap-4">
-                <div className="text-4xl leading-[48px] font-bold">
-                    Обращаем внимание
+                    { t('policy.attention.title') }
                 </div>
                 <div className="text-neutral-400">
-                    Если ваш VPS создает проблемы для других пользователей (мощные DDoS аттаки, чрезмерные нагрузки на канал и дисковую подсистему и тд), то мы оставляем за собой право лимитировать нагрузку либо отказать в предоставлении услуг в любой момент и предложить переезд на выделенный сервер, дабы обеспечить стабильную и бесперебойную работу других клиентов. Лучше иногда отказать одному клиенту ради спокойствия и стабильности остальных.
+                    { t('policy.attention.text') }
                 </div>
             </div>
         </div>

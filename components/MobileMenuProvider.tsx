@@ -1,3 +1,5 @@
+'use client';
+
 import { MobileMenuContext } from "@/contexts/mobileMenuContext";
 import { ReactNode, useState } from "react";
 
@@ -12,7 +14,7 @@ export default function MobileMenuProvider({ children }: {
             document.body.classList.add('locked')
         else
             document.body.classList.remove('locked')
-        
+
         _setVisible(visible);
     }
     

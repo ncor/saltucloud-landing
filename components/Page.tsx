@@ -1,3 +1,5 @@
+'use client';
+
 import { ReactNode } from "react"
 import Providers from "./Providers"
 import Header from "./sections/Header"

@@ -1,0 +1,192 @@
+{
+    "navigation": {
+        "contacts": "Contacts",
+        "support": "Support",
+        "policy": "Policy"
+    },
+    "banner": {
+        "title": "Best Servers with Anti-DDoS Protection",
+        "description": "An effective solution for stable operation of your infrastructure under any load.",
+        "actions": {
+            "rent": "Get started",
+            "support": "Support"
+        }
+    },
+    "pricing": {
+        "heading": "Configurations",
+        "description": "Choose the right plan for your project.",
+        "features": {
+            "cpuCore": {
+                "0": "core",
+                "1": "cores",
+                "2": "cores"
+            },
+            "gigabyte": "GB",
+            "os": "Any OS"
+        },
+        "labels": {
+            "0": "Start from here",
+            "1": "Most popular",
+            "2": "Enterprice"
+        },
+        "setups": {
+            "0": "Ideal for startups.",
+            "1": "For small projects.",
+            "2": "For high traffic.",
+            "3": "For large projects.",
+            "4": "Maximum capabilities."
+        }
+    },
+    "offer": {
+        "heading": "Made a choice?",
+        "description": "Rent a server right now.",
+        "actions": {
+            "rent": "Let's start"
+        }
+    },
+    "faq": {
+        "heading": "All you need to know",
+        "description": "Frequently asked questions",
+        "groups": {
+            "common": {
+                "label": "General",
+                "items": {
+                    "0": {
+                        "question": "How flexible are you with clients?",
+                        "answer": "We are always willing to accommodate our clients and protect their rights in the event of disputes. Don't worry, your server won't be suddenly turned off at the first complaint."
+                    },
+                    "1": {
+                        "question": "How can I pay for your services?",
+                        "answer": "We accept most cryptocurrencies. If you can't pay with cryptocurrency, you can pay with cards from the CIS and EU countries."
+                    }
+                }
+            },
+            "technical": {
+                "label": "Technical Questions",
+                "items": {
+                    "0": {
+                        "question": "What kind of virtualization is used on the servers?",
+                        "answer": "All our servers use KVM virtualization, which guarantees resource availability for each virtual machine through reservation."
+                    },
+                    "1": {
+                        "question": "What operating systems are available for installation?",
+                        "answer": "Windows Server (2012, 2016, 2019, 2022), Ubuntu (18.04, 20.04, 22.04), Debian (9, 10, 11), Centos (7, 8, 9), Freebsd (12, 13), AlmaLinux 8 and many more."
+                    },
+                    "2": {
+                        "question": "Can I reinstall the system during operation?",
+                        "answer": "Yes, you can reinstall the system at any time. To do this, click on the \"Reinstall OS\" button in the server card."
+                    },
+                    "3": {
+                        "question": "Can I rent a server with custom characteristics?",
+                        "answer": "Yes, you can add CPU/RAM to existing plans, for this please contact tech. support."
+                    },
+                    "4": {
+                        "question": "Can I rent additional IP addresses?",
+                        "answer": "Yes, currently this is only possible with Web Billing."
+                    },
+                    "5": {
+                        "question": "How to migrate a project to your servers?",
+                        "answer": "First, choose your desired plan, then write to us using the contacts, we will help you with the move absolutely free!"
+                    }
+                }
+            }
+        }
+    },
+    "contacts": {
+        "heading": "Contact us",
+        "description": "Links and contacts",
+        "labels": {
+            "soon": "Coming soon",
+            "subscribe": "Don't forget to subscribe"
+        },
+        "groups": {
+            "billing": {
+                "label": "Billing",
+                "items": {
+                    "billingBot": "Billing bot",
+                    "webBilling": "Web billing"
+                }
+            },
+            "customerService": {
+                "label": "Support and Partnership",
+                "items": {
+                    "supportBot": "Support bot",
+                    "administration": "Administration",
+                    "abuse": "Spam protection"
+                }
+            },
+            "media": {
+                "label": "Media",
+                "items": {
+                    "telegramChannel": "Telegram channel"
+                }
+            }
+        }
+    },
+    "policy": {
+        "title": "Policy",
+        "companyResponsibility": {
+            "title": "Company Responsibility",
+            "text": {
+                "0": "Issues with host machines and communication - Company's responsibility.",
+                "1": "Issues with the operating system, any software installed on the virtual server by the Client - Client's responsibility."
+            }
+        },
+        "paymentOrder": {
+            "title": "Payment Order",
+            "text": {
+                "0": "Services are provided based on 100% payment within 2 (two) business days after payment.",
+                "1": "Payment by individuals is made only through electronic payments."
+            }
+        },
+        "refund": {
+            "title": "Refund",
+            "text": {
+                "0": "Refunds are possible only in case of server inoperability due to the Company's fault and for the actual unused days.",
+                "1": "For a refund, the Company first conducts an analysis of the server to establish the causes of server inoperability. The analysis is carried out within 48 hours from the moment we notify you about the server analysis.",
+                "2": "The cost of installing third-party control panels, fees for additional IP addresses, and other additional services are not refundable.",
+                "3": "In case of violation of the terms of service provision, the Company has the right to refuse the Client a refund.",
+                "4": "We are not responsible for the operation of any software/script on our servers and will not be able to make a refund."
+            }
+        },
+        "clientRightsAndObligations": {
+            "title": "Client Rights and Obligations",
+            "text": {
+                "0": "The Client is provided access (unless otherwise specified) to the server and bears all related responsibility.",
+                "1": "In case of blocking the Client's hosting due to a complaint and/or for other reasons 1 (one) or more than 1 (one) time per month (network scan, outgoing DoS/DDoS attacks, etc.) and the Client's failure to take measures in response to the received complaint, the Company has the right to prematurely stop the provision of the service and block the Client without the possibility of refund."
+            }
+        },
+        "prohibitedActions": {
+            "title": "Using our VPS and dedicated servers strictly prohibited",
+            "text": {
+                "0": "Any intentional email spam (both outgoing and incoming).",
+                "1": "Viruses, exploits, botnets as well as redirects to sites containing viruses and exploits.",
+                "2": "Child pornography, incest, porn involving animals, as well as sites with models looking younger than 18 years old.",
+                "3": "Theft and fraud.",
+                "4": "Constantly loading the processor over 80%.",
+                "5": "In case of channel load on a permanent basis at high speeds, we can limit it for you.",
+                "6": "Fraudulent sites, as well as redirects to such sites.",
+                "7": "Carding and everything related to it.",
+                "8": "Hacking of governmental (and not only) organizations and executive authorities.",
+                "9": "Any activities that can lead to IP blacklisting (SpamHaus, StopForumSpam, SpamCop, Blocklist, antivirus databases, and any other blacklists).",
+                "10": "Conducting \"test\" DDoS and other attacks on your server, which can create problems for other clients. Also organizing DDoS attacks from rented servers.",
+                "11": "We reserve the right to block such clients immediately (including accounts registered under different names! In case of requests from law enforcement agencies, they will be provided with all the necessary information!.",
+                "12": "Online pharmacies with illegal pharmaceuticals.",
+                "13": "Organization of public VPN services.",
+                "14": "Cryptocurrency mining.",
+                "15": "Replica sites/stores for selling copies of watches, bags, clothes, etc.",
+                "16": "Port scanning and vulnerabilities.",
+                "17": "Proxying projects through our servers/VPS",
+                "18": "Violation of the laws of the country where your server/VPS is located",
+                "19": "Adding and using IP addresses not belonging to you. In case of detection of such abuses, we immediately block the server and impose a fine from 425 euros to 920 euros.",
+                "20": "Any other activities that can cause material or reputational damage to our company.",
+                "21": "Using unlicensed Microsoft software.",
+                "22": "We reserve the right to block such clients immediately (including accounts registered under other names. In case of requests from law enforcement agencies, they will be provided with all necessary information."
+            }
+        },
+        "attention": {
+            "title": "Please note",
+            "text": "If your VPS creates problems for other users (powerful DDoS attacks, excessive loads on the channel and disk subsystem, etc.), we reserve the right to limit the load or refuse to provide services at any time and offer to move to a dedicated server to ensure stable and uninterrupted operation of other clients. Sometimes it is better to refuse one client for the peace and stability of others."
+        }
+    }
+}

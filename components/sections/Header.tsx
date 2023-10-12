@@ -5,10 +5,12 @@ import { MobileMenuContext } from "@/contexts/mobileMenuContext";
 import Link from "../common/Link";
 import CloseIcon from "../icons/CloseIcon";
 import MobileMenu from "../MobileMenu";
+import { useTranslations } from "next-intl";
 
 
 export default function Header() {
     const { visible, setVisible } = useContext(MobileMenuContext);
+    const t = useTranslations();
 
     return <div className="relative w-full px-6 h-[64px] flex justify-center bg-black border-neutral-900 border-b-[1px]">
         <MobileMenu/>
@@ -24,13 +26,13 @@ export default function Header() {
             </button>
             <div className="hidden md:flex gap-2 text-neutral-400">
                 <Link href="/#contacts">
-                    Контакты
+                    { t('navigation.contacts') }
                 </Link>
                 <Link href="https://t.me/saltu_sup_bot" target="_blank">
-                    Поддержка
+                    { t('navigation.support') }
                 </Link>
                 <Link href="/policy">
-                    Правила
+                    { t('navigation.policy') }
                 </Link>
             </div>
         </div>

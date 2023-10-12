@@ -1,3 +1,5 @@
+'use client';
+
 import { ReactNode, useEffect, useRef, useState } from "react";
 import ExpandIcon from "../icons/ExpandIcon";
 import HideIcon from "../icons/HideIcon";
