@@ -2,11 +2,10 @@ import "../globals.css";
 import type { Metadata } from "next";
 import { NextIntlClientProvider } from "next-intl";
 import { Inter } from "next/font/google";
-import { notFound } from "next/navigation";
 
 const inter = Inter({ subsets: ["latin"] });
 
-const locales = ["ru", "en"];
+const locales = [ "ru", "en" ];
 
 export const metadata: Metadata = {
     title: "Saltu Cloud",
@@ -21,15 +20,9 @@ export default async function RootLayout({
     children: React.ReactNode;
     params: { locale: string };
 }) {
-    const isValidLocale = locales.some((cur) => cur === locale);
-    if (!isValidLocale) notFound();
+    locale = locales.some(l => l === locale) ? locale : 'en';
 
-    let dictionary;
-    try {
-        dictionary = (await import(`../../dictionaries/${locale}.json`)).default;
-    } catch (error) {
-        notFound();
-    }
+    let dictionary = (await import(`../../dictionaries/${locale}.json`)).default;
 
     return (
         <html lang={locale}>
